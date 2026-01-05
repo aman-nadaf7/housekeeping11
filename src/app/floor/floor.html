@@ -1,0 +1,46 @@
+<div class="whole">
+  <p-accordion [multiple]="true" value="0">
+    @for (floor of floors; track floor.number) {
+      <p-accordion-panel [value]="floor.number.toString()">
+        <p-accordion-header>
+          <div class="floors">
+            <div class="floor_left">
+              <img src="/header/downarrow.png" class="downarrow">
+              <span class="floor_title">{{ floor.title }}</span>
+            </div>
+            <div class="floor_right">
+              <span class="rooms">{{ floor.roomsCount }}</span>
+              <span class="cleaned">{{ floor.status }}</span>
+            </div>
+          </div>
+        </p-accordion-header>
+        <p-accordion-content>
+          <div class="main_floor">
+            <div class="floor_content">
+              @for (room of floor.rooms; track room.no + room.color) {
+                <p-card [class]="'room-card-primeng ' + room.color" styleClass="room-card-primeng">
+                  <div class="card_top">
+                    <span class="room_no">{{ room.no }}</span>
+                    <div class="icons">
+                      <span class="icon"><img src="/header/1.svg" height="16" width="16"></span>
+                      <span class="icon"><img src="/header/man.svg" height="16" width="16"></span>
+                      <span class="icon"><img src="/header/Layer 2.svg" height="16" width="16"></span>
+                    </div>
+                  </div>
+                  <span class="room_type">{{ room.type }}</span>
+                  <div class="card_bottom">
+                    <div class="icons">
+                      <span class="icon"><img src="/header/4.svg" height="16" width="16"></span>
+                      <span class="icon"><img src="/header/5.svg" height="16" width="16"></span>
+                      <span class="dnd">DND</span>
+                    </div>
+                  </div>
+                </p-card>
+              }
+            </div>
+          </div>
+        </p-accordion-content>
+      </p-accordion-panel>
+    }
+  </p-accordion>
+</div>

@@ -1,1 +1,460 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "primeicons/primeicons.css";
+
+/*
+<div class="main_floor">
+
+  <!-- FLOOR HEADER -->
+  <div class="floors">
+
+    <div class="floor_left">
+      <img src="/header/downarrow.png" class="downarrow">
+      <span class="floor_title">FLOOR: 1</span>
+    </div>
+
+    <div class="floor_right">
+      <span class="rooms">10 Rooms</span>
+      <span class="cleaned">5 Cleaned, 3 Dirty, 2 Inspect</span>
+    </div>
+
+  </div>
+
+  <!-- FLOOR CONTENT -->
+  <div class="floor_content">
+
+    <!-- ROOM CARD -->
+    <div class="room_card green">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="room_card pink">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div><div class="room_card blue">
+      <div class="card_top">
+        
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div><div class="room_card green">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div><div class="room_card pink">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div><div class="room_card green">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div><div class="room_card blue">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div><div class="room_card pink">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div><div class="room_card green">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+   
+    
+
+    </div><div class="room_card pink">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="main_floor1">
+
+  <!-- FLOOR HEADER -->
+  <div class="floors1">
+
+    <div class="floor_left">
+      <img src="/header/downarrow.png" class="downarrow">
+      <span class="floor_title">FLOOR: 2</span>
+    </div>
+
+    <div class="floor_right">
+      <span class="rooms">8 Rooms</span>
+      <span class="cleaned">5 Cleaned, 3 Dirty, 2 Inspect</span>
+    </div>
+
+  </div>
+
+  <!-- FLOOR CONTENT -->
+  <div class="floor_content">
+
+    <!-- ROOM CARD -->
+    <div class="room_card green">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="room_card pink">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div><div class="room_card blue">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div><div class="room_card green">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div><div class="room_card pink">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div><div class="room_card green">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div><div class="room_card blue">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div><div class="room_card pink">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    </div><div class="room_card green">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+   
+    
+
+    </div><div class="room_card pink">
+      <div class="card_top">
+        <span class="room_no">1200</span>
+        <div class="icons">
+          <span class="icon"><img src="/header/1.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/2.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/3.png " height="16" width="16"></span>
+        </div>
+      </div>
+
+      <span class="room_type">Deluxe</span>
+
+      <div class="card_bottom">
+        <div class="icons">
+          <span class="icon"><img src="/header/4.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/5.png " height="16" width="16"></span>
+          <span class="icon"><img src="/header/DND.png " height="14" width="24"></span>
+        </div>
+      </div>
+    
+
+
+    
+
+  </div>
+
+</div>
+
+*/
+

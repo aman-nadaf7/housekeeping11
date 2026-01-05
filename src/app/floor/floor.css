@@ -1,0 +1,277 @@
+.whole{
+    background: whitesmoke;
+  border-radius: 1px;        
+  padding: 0.8rem 0.8rem;
+}
+
+.dnd{
+    color: red;
+    font-family: sans-serif;
+    font-weight: bold;
+font-size: 0.8rem;
+}
+
+.main_floor {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.floors {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        padding-top: 1rem;
+    
+    padding-bottom: 0rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.floors1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 1.8rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.floor_left {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.rooms{
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+     font-family: 'DM Sans', sans-serif;
+     font-size: 14px;
+
+} 
+
+.cleaned{
+     font-family: 'DM Sans', sans-serif;
+     color: #767B82;
+     font-size: 11px;
+}
+
+
+.floor_title {
+    font-weight: 600;
+    font-size: 0.88rem;
+     font-family: 'DM Sans', sans-serif;
+}
+
+.floor_right {
+    
+    text-align: right !important;
+    font-size: 0.75rem;
+}
+
+.floor_content {
+    
+    display: grid;
+    grid-template-columns: repeat(6, minmax(180px, 1fr));  
+    gap: 0.94rem;
+    
+}
+.room_card {
+    padding: 10px;
+    min-height: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    border-radius: 0.2rem;
+}
+.room_card.green { background: #BCE5C4; cursor: pointer;}
+.room_card.pink  { background: #FFC4C1; cursor: pointer;}
+.room_card.blue  { background: #ADD4FF; cursor: pointer;}
+.card_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.card_bottom {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0.3rem;
+}
+.room_no {
+    font-size: 16px;
+    font-weight: 700;
+    font-weight: bold;
+    font-family: 'DM sans',sans-serif;
+
+}
+.room_type {
+    padding-top: 0.2rem;
+    padding-bottom: 1.8rem;
+    font-size: 11px;
+    color: #666;
+    font-family: 'DM Sans', sans-serif !important;
+}
+.status {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.status.dnd {
+    color: red;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.status.mur {
+    color: #0a6cff;
+}
+.icons {
+    display: flex;
+justify-content: flex-end;
+    gap: 12px;
+}
+
+.icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+}
+
+
+::ng-deep .p-panel-header .p-button {
+  display: none !important;
+}
+
+::ng-deep .p-panel {
+    border: none !important;
+}
+
+::ng-deep .p-panel-content{
+    padding: 0 !important;
+}
+
+::ng-deep .p-panel-toggleable .p-panel-header {
+    
+    padding-top: 0.375rem !important;
+    padding-bottom: 0.375rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    
+}
+
+/* p-card */
+::ng-deep .room-card-primeng {
+  all: unset !important;  /* RESET EVERYTHING */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  padding: 10px !important;
+  min-height: 70px !important;
+  font-size: 12px !important;
+  border-radius: 0.2rem !important;
+  box-sizing: border-box !important;
+  background: #BCE5C4 !important; 
+  margin: 0 !important;
+  width: 100% !important;
+  height: auto !important;
+  
+}
+
+::ng-deep .room-card-primeng * {
+  box-sizing: border-box !important;
+}
+
+::ng-deep .room-card-primeng .p-card-header,
+::ng-deep .room-card-primeng .p-card-title,
+::ng-deep .room-card-primeng .p-card-subtitle,
+::ng-deep .room-card-primeng .p-card-footer {
+  display: none !important;
+}
+
+::ng-deep .room-card-primeng .p-card-body,
+::ng-deep .room-card-primeng .p-card-content {
+  all: unset !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 100% !important;
+  display: contents !important;
+  width: 100% !important;
+}
+
+::ng-deep .room-card-primeng.pink{
+    background: #FFC4C1 !important;
+}
+
+::ng-deep .room-card-primeng.blue{
+    background:#ADD4FF !important;
+}
+
+
+::ng-deep .p-accordion {
+  border: none !important;
+}
+
+::ng-deep .p-accordion-panel .p-accordion-header {
+  margin: 0 !important;
+  border: none !important;
+  border-radius: 1rem !important;
+  padding: 0 !important;
+}
+
+::ng-deep .p-accordion-panel .p-accordion-header-link {
+  padding: 0.375rem 0 !important;
+  border-radius: 1rem !important;
+}
+
+::ng-deep .p-accordion-panel .p-accordion-content-wrapper {
+  margin: 0.5rem 0 0 0 !important;
+  border-radius: 0 0 1rem 1rem !important;
+}
+
+::ng-deep .p-accordion-panel .p-accordion-content {
+  padding: 0 !important;
+  border: none !important;
+}
+
+
+::ng-deep .p-accordionpanel-active .p-accordionheader .downarrow {
+  transform: rotate(180deg) !important;
+}
+
+::ng-deep .p-accordionpanel{
+    border-style: none !important;
+}
+
+::ng-deep .floor-panel .downarrow {
+  transition: transform 0.3s ease !important;
+  transform-origin: center !important;
+  display: inline-block; 
+}
+
+::ng-deep .p-accordion .p-accordion-header .p-accordion-toggle-icon,
+::ng-deep .p-accordion-panel .p-accordion-header .p-accordion-toggle-icon,
+::ng-deep .p-accordionheader-toggle-icon,
+::ng-deep .p-accordion-header-toggle-icon {
+  display: none !important;
+}
+
+
+::ng-deep .p-accordion svg[aria-hidden="true"],
+::ng-deep .p-accordion .p-icon {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
+}
+
+::ng-deep .p-accordioncontent-content{
+    padding-right: 0rem;
+}

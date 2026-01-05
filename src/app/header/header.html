@@ -1,0 +1,151 @@
+<div class="page">
+
+<p-toolbar class="main_header_toolbar flex flex-wrap gap-0">
+    <div class="p-toolbar-group-left">
+    <i class="pi pi-arrow-left"></i>
+    <span class="title">Unicorn Groups / Radiant Retreat  / </span>
+    <span class="highlighted">  Task Management</span>
+  </div>
+  
+  <div class="p-toolbar-group-right header_logos">
+    <img src="/header/aura-logo.png" height="28" width="82" pTooltip="Aura AI" tooltipPosition="bottom" placeholder="Bottom" tooltipStyleClass="sans-serif">
+    <img src="/header/chat2.png" height="28" width="82">
+    <p-toast></p-toast>
+    <i class="pi pi-bell" style="cursor: pointer" (click)="show()"></i>
+    <img src="/header/lasticon.png" height="24" width="24">
+  </div>
+</p-toolbar>
+
+<div class="mid_header">
+
+<div class="mid-header_logos flex align-items-center w-full px-4 gap-4">
+  <span class="property_overview flex-1">Property Overview</span>
+        <div class="selectbtn flex-shrink-0">
+    <p-selectbutton [options]="stateOptions" [(ngModel)]="value" optionLabel="label" optionValue="value" aria-labelledby="basic" />
+</div>
+          <div class="search-container flex-shrink-0">
+  <p-iconfield iconPosition="left" class="perfect-search">
+    <p-inputicon class="pi pi-search" />
+    <input type="text" pInputText placeholder="Search" (input)="onSearch($event)" />
+  </p-iconfield>
+</div>
+          <div class="prime-date flex-shrink-0">
+          <p-datepicker [(ngModel)]="selectedDate"  dateFormat="dd MM yy"/>
+        </div>
+        <img src="/header/filterr.svg" height="32" width="106" class="filter">
+        <img src="/header/autoassign.png" height="32" width="143" class="autoassign">
+    </div>
+</div>
+
+
+<div class="last-header">
+
+  <div class="kpi-container">
+
+    <!-- KPI CARD 1 -->
+
+ <div class="page__legend-column">
+          <div class="legend">
+            
+            <div class="legend__bar">
+              <div class="legend__segment legend__segment--dirty" style="flex: 20">
+                <span class="legend__percent">20%</span>
+              </div>
+              <div class="legend__segment legend__segment--inprogress" style="flex: 14">
+                <span class="legend__percent">14%</span>
+              </div>
+              <div class="legend__segment legend__segment--cleaned" style="flex: 52">
+                <span class="legend__percent">52%</span>
+              </div>
+              <div class="legend__segment legend__segment--inspect" style="flex: 10">
+                <span class="legend__percent">10%</span>
+              </div>
+              <div class="legend__segment legend__segment--out" style="flex: 3">
+                <span class="legend__percent">3%</span>
+              </div>
+              <div class="legend__segment legend__segment--order" style="flex: 1">
+                <span class="legend__percent">1%</span>
+              </div>
+            </div>
+            <!-- labels -->
+            <div class="legend__labels">
+              <div class="legend__item">
+                <span class="legend__color legend__color--dirty"></span>
+                Dirty
+              </div>
+              <div class="legend__item">
+                <span class="legend__color legend__color--inprogress"></span>
+                In Progress
+              </div>
+              <div class="legend__item">
+                <span class="legend__color legend__color--inspect"></span>
+                Inspect
+              </div>
+              <div class="legend__item">
+                <span class="legend__color legend__color--cleaned"></span>
+                Cleaned
+              </div>
+              <div class="legend__item">
+                <span class="legend__color legend__color--out"></span>
+                Out of Service
+              </div>
+              <div class="legend__item">
+                <span class="legend__color legend__color--order"></span>
+                Out of Order
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
+    <div class="kpi-card-1">
+      <div class="left">
+      <div class="kpi-top">
+        <span class="kpi-title">Occupancy</span>
+      </div>
+
+      <div class="kpi-value1">
+        232 <span class="kpi-total">/ 290</span>
+      </div>
+    </div>
+
+      <div class="kpi-circle">
+        <img src="/header/perecentage.png" height="40" width="40" class="image1">
+      </div>
+    </div>
+
+    <!-- KPI CARD 2 - ARRIVAL -->
+  <p-card class="kpi-card-primeng">
+    <div class="kpi-top">
+      <span class="kpi-title">Arrival</span>
+      <div class="kpi-icon"><img src="/header/arrival.png" height="40" width="40" class="image11"></div>
+    </div>
+    <div class="kpi-value2">42</div>
+    <div class="kpi-meta positive"><span class="pos">+2.0% </span><span>From last week</span></div>
+  </p-card>
+
+  <!-- KPI CARD 3 - DEPARTURE -->
+  <p-card class="kpi-card-primeng">
+    <div class="kpi-top">
+      <span class="kpi-title">Departure</span>
+      <div class="kpi-icon"><img src="/header/departure.png" height="40" width="40" class="image2"></div>
+    </div>
+    <div class="kpi-value3">42</div>
+    <div class="kpi-meta negative"><span class="neg">-2.1% </span><span>From last week</span></div>
+  </p-card>
+
+  <!-- KPI CARD 4 - GUEST REQUEST -->
+  <p-card class="kpi-card-primeng">
+    <div class="kpi-top">
+      <span class="kpi-title">Guest Request</span>
+      <div class="kpi-icon"><img src="/header/guestreq.png" height="40" width="40" class="image3"></div>
+    </div>
+    <div class="kpi-value4">42</div>
+    <div class="kpi-meta positive"><span class="pos">4.5 min</span> <span>Avg. service time</span></div>
+  </p-card>
+</div>
+</div>
+<div class="floors-scroll">
+    <app-floor></app-floor>
+  </div>
+</div>
