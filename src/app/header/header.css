@@ -564,9 +564,12 @@ html, body {
 
 @media (max-width: 768px) {
 
-  .header_logos[_ngcontent-ng-c3261472852] {
+  .header_logos{
     display: flex !important;
-    gap: 3.2rem !important;
+    gap: 3.7rem !important;
+    flex-shrink: 0 !important;
+    width: 300px !important;
+    min-width: max-content !important;
 }
 
   html, body { 
@@ -585,7 +588,7 @@ html, body {
     gap: 0.5rem !important;
     font-size: 14px !important;
     white-space: nowrap;
-
+    flex-shrink: 0 !important;
   }
   
 .mid_header {
