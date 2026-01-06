@@ -48,8 +48,6 @@ html, body {
 }
 
 
-
-
 /* PrimeNG IconField Search*/
 
 ::ng-deep .perfect-search {
@@ -91,17 +89,15 @@ html, body {
   outline: none !important;
   color: #ffffff !important;
   font-size: 14px !important;
-      font-family: sans-serif;
-    padding-left: 37px !important;
+  font-family: sans-serif;
+  padding-left: 37px !important;
 }
 
 ::ng-deep .perfect-search input::placeholder {
   color: #cfd3da !important;
 }
 ::ng-deep .p-inputicon {
-    
     line-height: 1.2 !important;
-   
 }
 ::ng-deep .perfect-search .p-inputwrapper-focus,
 ::ng-deep .perfect-search input:focus + .p-inputwrapper {
@@ -134,11 +130,7 @@ html, body {
   gap: 1.2rem !important;
 }
 
-
-
 /* Datepicker module*/
-
-
 ::ng-deep .prime-date .p-inputtext {
   height: 2rem !important;
   width: 9.5rem !important;
@@ -194,7 +186,6 @@ html, body {
 
 ::ng-deep .p-selectbutton .p-togglebutton:last-child {
   border: none !important;
-
   background-color: #3a4048;
 }
 
@@ -231,7 +222,6 @@ html, body {
 
 /* PrimeNG arrows*/
 ::ng-deep .pi-arrow-left {
-
   font-size: 0.9rem !important;
   padding-top: 0.2rem;
 }
@@ -240,8 +230,6 @@ html, body {
   padding-top: 0.2rem;
   font-size: 1.3rem !important;
 }
-
-
 
 
 .main_header {
@@ -302,7 +290,6 @@ html, body {
 .max-w-full {
   background-color: #22c55e;
   display: flex;
-
 }
 
 .mid-header_logos {
@@ -313,7 +300,6 @@ html, body {
   padding: 0 1rem !important;
   gap: 1rem !important;
 }
-
 
 
 .last-header {
@@ -344,7 +330,7 @@ html, body {
 .search-icon {
   width: 14px;
   opacity: 0.8;
-      padding-bottom: 0.1rem;
+  padding-bottom: 0.1rem;
 }
 
 .search-input {
@@ -566,7 +552,7 @@ html, body {
 
   .header_logos{
     display: flex !important;
-    gap: 3.7rem !important;
+    gap: 3.4rem !important;
     flex-shrink: 0 !important;
     width: 300px !important;
     min-width: max-content !important;
@@ -633,9 +619,8 @@ html, body {
     height: 2rem !important;
     width: 11.5rem !important;}
 
-  .search-container { width: 140px !important; }
+.search-container { width: 140px !important; }
   
-  /* Header 3: Legend + KPIs */
   .page__legend-column {
     height: 90px !important;
     padding: 0.5rem 1rem !important;
@@ -864,7 +849,6 @@ html, body {
 .legend__color--order {
   background-color: #6366f1;
 }
-
 
 .page {
   height: 100vh !important;
