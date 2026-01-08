@@ -8,7 +8,6 @@ import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { PanelModule } from 'primeng/panel';
 import { Toast } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
-import { Ripple } from 'primeng/ripple';
 import { Tooltip } from 'primeng/tooltip';
 import { ToolbarModule } from 'primeng/toolbar';
 import { ProgressBarModule } from 'primeng/progressbar';
