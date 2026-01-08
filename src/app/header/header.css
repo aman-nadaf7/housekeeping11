@@ -416,10 +416,43 @@ html, body {
 }
 
 /* RIGHT IMAGE */
-.kpi-card-1 .kpi-circle {
+/* CIRCLE PERCENT */
+.kpi-circle {
+  display: flex;
+  height: 54px;
+  width: 54px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.occupancy-progress-wrapper {
+  position: relative;
+  width: 70px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: -8px;
+}
+
+::ng-deep .occupancy-chart {
+  width: 70px !important;
+  height: 70px !important;
+}
+
+::ng-deep .occupancy-chart canvas {
+  max-width: 70px !important;
+  max-height: 70px !important;
+}
+
+.occupancy-text {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  z-index: 10;
+  line-height: 1;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .kpi-card-1 .kpi-circle .image1 {
@@ -878,3 +911,10 @@ html, body {
   background: #e6ebf6 !important;
   scrollbar-width: thin !important;
 }
+
+
+
+
+
+
+

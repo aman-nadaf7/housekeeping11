@@ -1,24 +1,26 @@
 <div class="page">
 
 <p-toolbar class="main_header_toolbar flex flex-wrap gap-0">
-    <div class="p-toolbar-group-left">
+  <ng-template pTemplate="start">
     <i class="pi pi-arrow-left"></i>
     <span class="title">Unicorn Groups / Radiant Retreat  / </span>
     <span class="highlighted">  Task Management</span>
-  </div>
+  </ng-template>
   
-  <div class="p-toolbar-group-right header_logos">
-    <img src="/header/aura-logo.png" height="28" width="82" pTooltip="Aura AI" tooltipPosition="bottom" placeholder="Bottom" tooltipStyleClass="sans-serif">
-    <img src="/header/chat2.png" height="28" width="82">
-    <p-toast></p-toast>
-    <i class="pi pi-bell" style="cursor: pointer" (click)="show()"></i>
+  <ng-template pTemplate="end">
+    <img src="/header/aura-logo.png" height="28" width="82" class="mr-3" pTooltip="Aura AI" tooltipPosition="bottom" placeholder="Bottom" tooltipStyleClass="sans-serif">
+    <img src="/header/chat2.png" height="28" width="82" class="mr-3">
+    <p-toast class="mr-3"></p-toast>
+    <i class="pi pi-bell mr-4" style="cursor: pointer" (click)="show()"></i>
     <img src="/header/lasticon.png" height="24" width="24">
-  </div>
+  </ng-template>
 </p-toolbar>
+
+
 
 <div class="mid_header">
 
-<div class="mid-header_logos flex align-items-center w-full px-4 gap-1">
+<div class="mid-header_logos flex align-items-center w-full px-4 gap-1 flex-shrink-0">
   <span class="property_overview flex-1">Property Overview</span>
         <div class="selectbtn flex-shrink-0">
     <p-selectbutton [options]="stateOptions" [(ngModel)]="value" optionLabel="label" optionValue="value" aria-labelledby="basic" />
@@ -34,6 +36,7 @@
         </div>
         <img src="/header/filter.png" height="32" width="109" class="filter">
         <img src="/header/autoassign.png" height="32" width="143" class="autoassign">
+        
     </div>
 </div>
 <div class="last-header">
@@ -108,7 +111,16 @@
     </div>
 
       <div class="kpi-circle">
-        <img src="/header/perecentage.png" height="40" width="40" class="image1">
+                <div class="occupancy-progress-wrapper">
+          <p-chart 
+            type="doughnut" 
+            [data]="chartData" 
+            [options]="chartOptions"
+            class="occupancy-chart">
+          </p-chart>
+          <span class="occupancy-text">{{ occupancyPercentage }}%</span>
+        </div>
+
       </div>
     </div>
 
