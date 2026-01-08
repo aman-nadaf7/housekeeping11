@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { DatePickerModule } from 'primeng/datepicker';
-import { ImportsModule } from '../imports';
 import { Floor } from '../floor/floor';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
@@ -22,7 +21,7 @@ import { Card, CardModule } from 'primeng/card';
 @Component({
   standalone: true,
   selector: 'app-header',
-  imports: [ImportsModule,Floor,SelectButtonModule,PanelModule,Toast,Tooltip,ToolbarModule,ProgressBarModule,
+  imports: [FormsModule,Floor,SelectButtonModule,PanelModule,Toast,Tooltip,ToolbarModule,ProgressBarModule,
      IconFieldModule, InputIconModule, InputTextModule,CardModule],
   templateUrl: './header.html',
   styleUrl: './header.css',

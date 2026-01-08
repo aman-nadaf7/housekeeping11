@@ -5,9 +5,13 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 import { ApplicationConfig } from '@angular/core';
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeuix/themes/aura';
+import { App } from './app/app';
+import { provideRouter } from '@angular/router';
+import { routes } from './app/app.routes';
 
   export const appConfig: ApplicationConfig = {
       providers: [
+      provideRouter(routes), 
       provideHttpClient(withFetch()),
       provideAnimationsAsync(),
       providePrimeNG({
@@ -15,7 +19,7 @@ import Aura from '@primeuix/themes/aura';
       }),
     ],
   };
-    bootstrapApplication(Header, appConfig).catch((err) =>
+    bootstrapApplication(App, appConfig).catch((err) =>
     console.error(err)
 );
 

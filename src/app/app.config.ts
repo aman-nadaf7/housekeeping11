@@ -5,21 +5,17 @@ import Aura from '@primeuix/themes/aura';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { routes } from './app.routes';
 
+
 export const appConfig: ApplicationConfig = {
   providers: [
     providePrimeNG({
-      
       theme:{
         preset:Aura
-        
       }
-
     }),
     provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideHttpClient()
-    
-    
   ]
 };

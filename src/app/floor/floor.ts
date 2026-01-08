@@ -47,4 +47,5 @@ export class Floor {
       ]
     }
   ];
+  protected activeFloorNumber = ['0'];
 }
