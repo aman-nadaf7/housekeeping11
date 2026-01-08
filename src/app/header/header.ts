@@ -41,10 +41,16 @@ export class Header {
     }
 
 
+    legendChartData: any;
+  legendChartOptions: any;
+  
+
   ngOnInit() {
     this.initChartOptions();
     this.updateChart();
+    this.initLegendChart();
   }
+
 
   initChartOptions() {
     this.chartOptions = {
@@ -82,6 +88,80 @@ export class Header {
           borderWidth: 0,
           borderRadius: 3,
           spacing: 1
+        }
+      ]
+    };
+  }
+
+
+  initLegendChart() {
+    this.legendChartOptions = {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: false
+        },
+        tooltip: {
+          enabled: true
+        }
+      },
+      scales: {
+        x: {
+          stacked: true,
+          display: false,
+          grid: { display: false }
+        },
+        y: {
+          stacked: true,
+          display: false,
+          grid: { display: false }
+        }
+      }
+    };
+    this.updateLegendChart();
+  }
+
+  updateLegendChart() {
+    this.legendChartData = {
+      labels: ['Status'],
+      datasets: [
+        {
+          label: 'Dirty',
+          data: [18],
+          backgroundColor: '#ff6b6b',
+          borderWidth: 0
+        },
+        {
+          label: 'In Progress',
+          data: [12],
+          backgroundColor: '#ffbe3b',
+          borderWidth: 0
+        },
+        {
+          label: 'Cleaned',
+          data: [50],
+          backgroundColor: '#4ade80',
+          borderWidth: 0
+        },
+        {
+          label: 'Inspect',
+          data: [8],
+          backgroundColor: '#38bdf8',
+          borderWidth: 0
+        },
+        {
+          label: 'Out of Service',
+          data: [5],
+          backgroundColor: '#6366f1',
+          borderWidth: 0
+        },
+        {
+          label: 'Out of Order',
+          data: [3],
+          backgroundColor: '#9ca3af',
+          borderWidth: 0
         }
       ]
     };

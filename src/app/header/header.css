@@ -755,6 +755,48 @@ html, body {
   flex-direction: column;
   gap: 0.4rem;
 }
+.legend__chart-wrapper {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 0.5rem;
+}
+
+::ng-deep .legend-chart {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+::ng-deep .legend-chart canvas {
+  max-height: 35px !important;
+}
+
+.legend__percentages {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  z-index: 10;
+
+}
+
+.legend__percent-label {
+  position: absolute;
+  font-size: 0.60rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  white-space: nowrap;
+
+}
+
 
 
 .legend__segment--dirty {

@@ -46,57 +46,56 @@
     <!-- KPI CARD 1 -->
 
  <div class="page__legend-column">
-          <div class="legend">
-            
-            <div class="legend__bar">
-              <div class="legend__segment legend__segment--dirty" style="flex: 20">
-                <span class="legend__percent">20%</span>
-              </div>
-              <div class="legend__segment legend__segment--inprogress" style="flex: 14">
-                <span class="legend__percent">14%</span>
-              </div>
-              <div class="legend__segment legend__segment--cleaned" style="flex: 52">
-                <span class="legend__percent">52%</span>
-              </div>
-              <div class="legend__segment legend__segment--inspect" style="flex: 10">
-                <span class="legend__percent">10%</span>
-              </div>
-              <div class="legend__segment legend__segment--out" style="flex: 3">
-                <span class="legend__percent">3%</span>
-              </div>
-              <div class="legend__segment legend__segment--order" style="flex: 1">
-                <span class="legend__percent">1%</span>
-              </div>
-            </div>
-            <!-- labels -->
-            <div class="legend__labels">
-              <div class="legend__item">
-                <span class="legend__color legend__color--dirty"></span>
-                Dirty
-              </div>
-              <div class="legend__item">
-                <span class="legend__color legend__color--inprogress"></span>
-                In Progress
-              </div>
-              <div class="legend__item">
-                <span class="legend__color legend__color--inspect"></span>
-                Inspect
-              </div>
-              <div class="legend__item">
-                <span class="legend__color legend__color--cleaned"></span>
-                Cleaned
-              </div>
-              <div class="legend__item">
-                <span class="legend__color legend__color--out"></span>
-                Out of Service
-              </div>
-              <div class="legend__item">
-                <span class="legend__color legend__color--order"></span>
-                Out of Order
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="legend">
+    <!-- PrimeNG Stacked Bar Chart -->
+<div class="legend__chart-wrapper" style="position: relative;">
+      <p-chart 
+        type="bar" 
+        [data]="legendChartData" 
+        [options]="legendChartOptions"
+        class="legend-chart">
+      </p-chart>
+      <!-- Percentage Labels Overlay -->
+      <div class="legend__percentages">
+        <span class="legend__percent-label" style="width: 20%; left: -2%;">20%</span>
+        <span class="legend__percent-label" style="width: 14%; left: 16%;">14%</span>
+        <span class="legend__percent-label" style="width: 52%; left: 28%;">52%</span>
+        <span class="legend__percent-label" style="width: 10%; left: 78%">10%</span>
+        <span class="legend__percent-label" style="width: 6%; left: 87%;">3%</span>
+        <span class="legend__percent-label" style="width: 1%; left: 95%;">1%</span>
+      </div>
+    </div>
+    
+    <!-- Legend Labels -->
+    <div class="legend__labels">
+      <div class="legend__item">
+        <span class="legend__color" style="background-color: #ff6b6b;"></span>
+        Dirty
+      </div>
+      <div class="legend__item">
+        <span class="legend__color" style="background-color: #ffbe3b;"></span>
+        In Progress
+      </div>
+      <div class="legend__item">
+        <span class="legend__color" style="background-color: #38bdf8;"></span>
+        Inspect
+      </div>
+      <div class="legend__item">
+        <span class="legend__color" style="background-color: #4ade80;"></span>
+        Cleaned
+      </div>
+      <div class="legend__item">
+        <span class="legend__color" style="background-color: #6366f1;"></span>
+        Out of Service
+      </div>
+      <div class="legend__item">
+        <span class="legend__color" style="background-color: #9ca3af;"></span>
+        Out of Order
+      </div>
+    </div>
+  </div>
+</div>
+
     
 
     <div class="kpi-card-1">
