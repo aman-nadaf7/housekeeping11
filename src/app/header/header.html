@@ -8,22 +8,20 @@
   </ng-template>
   
   <ng-template pTemplate="end">
-    <img src="/header/aura-logo.png" height="28" width="82" class="mr-3" pTooltip="Aura AI" tooltipPosition="bottom" placeholder="Bottom" tooltipStyleClass="sans-serif">
-    <img src="/header/chat2.png" height="28" width="82" class="mr-3">
+    <img src="/header/aura-logo.png" height="28" width="82" class="mr-3" pTooltip="Aura AI" tooltipPosition="bottom" placeholder="Bottom" tooltipStyleClass="sans-serif" style="cursor: pointer">
+    <img src="/header/chat2.png" height="28" width="82" class="mr-3" style="cursor: pointer">
     <p-toast class="mr-3"></p-toast>
     <i class="pi pi-bell mr-4" style="cursor: pointer" (click)="show()"></i>
-    <img src="/header/lasticon.png" height="24" width="24">
+    <img src="/header/lasticon.png" height="24" width="24" style="cursor: pointer">
   </ng-template>
 </p-toolbar>
-
-
 
 <div class="mid_header">
 
 <div class="mid-header_logos flex align-items-center w-full px-4 gap-1 flex-shrink-0">
   <span class="property_overview flex-1">Property Overview</span>
         <div class="selectbtn flex-shrink-0">
-    <p-selectbutton [options]="stateOptions" [(ngModel)]="value" optionLabel="label" optionValue="value" aria-labelledby="basic" />
+    <p-selectbutton [options]="stateOptions" [(ngModel)]="value" optionLabel="label" optionValue="value"  />
 </div>
           <div class="search-container flex-shrink-0">
   <p-iconfield iconPosition="left" class="perfect-search">
@@ -47,15 +45,15 @@
 
  <div class="page__legend-column">
   <div class="legend">
-    <!-- PrimeNG Stacked Bar Chart -->
+    <!-- Bar Chart -->
 <div class="legend__chart-wrapper" style="position: relative;">
       <p-chart 
         type="bar" 
         [data]="legendChartData" 
         [options]="legendChartOptions"
-        class="legend-chart">
+        class="legend-chart"
+        style="pointer-events: none">
       </p-chart>
-      <!-- Percentage Labels Overlay -->
       <div class="legend__percentages">
         <span class="legend__percent-label" style="width: 20%; left: -2%;">20%</span>
         <span class="legend__percent-label" style="width: 14%; left: 16%;">14%</span>
@@ -95,9 +93,6 @@
     </div>
   </div>
 </div>
-
-    
-
     <div class="kpi-card-1">
       <div class="left">
       <div class="kpi-top">
@@ -119,7 +114,6 @@
           </p-chart>
           <span class="occupancy-text">{{ occupancyPercentage }}%</span>
         </div>
-
       </div>
     </div>
 

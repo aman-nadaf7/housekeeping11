@@ -139,6 +139,7 @@ html, body {
   color: #FFFFFF !important;
   font-family: 'DM Sans', sans-serif;
   font-size: 0.9rem;
+  cursor: pointer !important;
 }
 
 
@@ -192,8 +193,6 @@ html, body {
 ::ng-deep .p-selectbutton .p-togglebutton:first-child {
   background-color: #3a4048;
   border-left: none !important;
-
-
 }
 
 ::ng-deep .selectbtn .p-selectbutton .p-togglebutton {
@@ -224,6 +223,7 @@ html, body {
 ::ng-deep .pi-arrow-left {
   font-size: 0.9rem !important;
   padding-top: 0.2rem;
+  cursor: pointer;
 }
 
 ::ng-deep .pi-bell {
@@ -251,6 +251,7 @@ html, body {
   white-space: nowrap;
   color: #FFFFFF80;
   font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
 }
 
 
@@ -260,6 +261,7 @@ html, body {
   margin-top: 0.2rem;
   color: #FFFFFF;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .header_logos {
@@ -272,6 +274,7 @@ html, body {
 .mid_header {
   background: #1A232E;
   padding-top: 2rem;
+  cursor: pointer;
 }
 
 .property_overview {
@@ -674,7 +677,7 @@ html, body {
     justify-content: space-around !important;
     flex-wrap: wrap !important;
     padding: 0rem 3.5rem;
-
+  font-family: 'DM Sans', sans-serif !important;
   }
   
   .kpi-container {  
@@ -727,7 +730,7 @@ html, body {
   .kpi-card-primeng { width: 45% !important; }
 }
 
-/*         repsonsive              */
+/*         repsonsive          */
 
 
 .image1 {
@@ -755,6 +758,7 @@ html, body {
   flex-direction: column;
   gap: 0.4rem;
 }
+
 .legend__chart-wrapper {
   width: 100%;
   height: 35px;
@@ -796,8 +800,6 @@ html, body {
   white-space: nowrap;
 
 }
-
-
 
 .legend__segment--dirty {
   background-color: #ff6b6b;
@@ -844,7 +846,7 @@ html, body {
 
 
 .legend__color {
-  width: 1.3rem;
+  width: 1.9rem;
   height: 0.32rem;
   border-radius: 999rem;
 }

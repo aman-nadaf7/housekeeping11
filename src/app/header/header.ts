@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
 import { DatePickerModule } from 'primeng/datepicker';
 import { Floor } from '../floor/floor';
 import { SelectButtonModule } from 'primeng/selectbutton';
-import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { PanelModule } from 'primeng/panel';
 import { Toast } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
@@ -14,10 +12,8 @@ import { ProgressBarModule } from 'primeng/progressbar';
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 import { InputTextModule } from 'primeng/inputtext';
-import { Card, CardModule } from 'primeng/card';
+import { CardModule } from 'primeng/card';
 import { ChartModule } from 'primeng/chart';
-import {OnInit, ViewChild } from '@angular/core';
-import { DatePicker } from 'primeng/datepicker';
 
 @Component({
   standalone: true,
@@ -26,7 +22,7 @@ import { DatePicker } from 'primeng/datepicker';
      IconFieldModule, InputIconModule, InputTextModule,CardModule,ChartModule,DatePickerModule],
   templateUrl: './header.html',
   styleUrl: './header.css',
-      providers: [MessageService]
+  providers: [MessageService]
 
 })
 export class Header {
@@ -41,7 +37,7 @@ export class Header {
     }
 
 
-    legendChartData: any;
+  legendChartData: any;
   legendChartOptions: any;
   
 
@@ -61,7 +57,7 @@ export class Header {
           display: false
         },
         tooltip: {
-          enabled: false
+          enabled: false,
         }
       },
       cutout: '85%',
@@ -92,8 +88,7 @@ export class Header {
       ]
     };
   }
-
-
+  
   initLegendChart() {
     this.legendChartOptions = {
       indexAxis: 'y',

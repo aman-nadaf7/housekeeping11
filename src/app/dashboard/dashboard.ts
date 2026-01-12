@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Floor } from '../floor/floor';
 import { Header } from '../header/header';
+import { Signal } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,6 +10,6 @@ import { Header } from '../header/header';
   styleUrl: './dashboard.css',
 })
 export class Dashboard {
-  
+
 
 }
